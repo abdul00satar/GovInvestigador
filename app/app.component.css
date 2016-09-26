@@ -1,0 +1,55 @@
+@font-face {
+    font-family: robotobold;
+    src: url('fontes/roboto/Roboto-Bold.woff');
+    src: url('fontes/roboto/Roboto-Bold.woff2');
+}
+
+
+@font-face {
+    font-family: robotoMedium;
+    src: url('fontes/roboto/Roboto-Medium.woff');
+    src: url('fontes/roboto/Roboto-Medium.woff2');
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url('fontes/roboto/Roboto-Regular.woff');
+    src: url('fontes/roboto/Roboto-Regular.woff2');
+}
+
+@font-face {
+    font-family: robotoLight;
+    src: url('fontes/roboto/Roboto-Light.woff');
+    src: url('fontes/roboto/Roboto-Light.woff2');
+}
+/*color section*/
+.color-subtitle{
+    color:#2c6ed5;
+}
+
+/*buttons*/
+.btn-golf{
+    background: #2c6ed5;
+    border: 2px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.btn-golf:hover{
+    background: #2766c8;
+    color: white;
+    
+}
+
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+

@@ -1,0 +1,15 @@
+.display-block{
+    display: inline-block
+}
+
+.fixed{
+    position: fixed
+}
+
+.bg-white{
+    background: white;
+}
+
+.bg-green{
+    color: limegreen
+}

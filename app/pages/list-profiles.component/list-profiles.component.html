@@ -1,0 +1,94 @@
+
+<header>
+    <div id="subheader">
+        <h1 Container class="text-center"><b>TOP PROFILES OF THE DAY</b></h1>
+        <h1 Container class="text-center"><b>iTS YOUR TIME TO GET HERE FOR BUSSINESS!</b></h1>
+        <P class="text-center margin-top-40"><button class="btn btn-cadastrar">Cadastrar</button><p>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-default">
+<div class="container">
+  <div class="row">
+  <div class="container-fluid">
+
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Top profiles</a></li>
+        <li><a href="#">Most see</a></li>
+        <li><a href="#">Profile of the day</a></li>
+      </ul>
+    </div>
+        <div class="form-inline padding-top-10">
+        <div class="form-group float-rigth display-block">
+         <label for="sel1">Categoria:</label>
+          <select class="form-control" id="sel1">
+          <option>Webdesigner</option>
+          <option>Graphic Designer</option>
+          <option>DBA</option>
+          <option>Backend Developer</option>
+          </select>
+          <span class="">
+          
+          <input type="text" class="form-control search-input" placeholder="Pesquisar..." id="usr">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+        </div>
+  </div>
+  </div>
+</div>
+</nav>
+
+<!-- Container (Portfolio Section) -->
+
+<div class="container">
+    <div class="row">
+    
+<div class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+   
+    <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
+      <div class="thumbnail">
+        <img src="img/profiles/profile1.png" alt="Paris" width="400" height="300">
+        <h4>Paris</h4>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
+      <div class="thumbnail">
+        <img src="img/profiles/profile2.png" alt="New York" width="400" height="300">
+        <h4>New York</h4>
+        <p>We built New York</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
+      <div class="thumbnail">
+        <img src="img/profiles/profile3.png" alt="San Francisco" width="400" height="300">
+        <h4>San Francisco</h4>
+        <p>Yes, San Fran is ours</p>
+      </div> 
+    </div>
+    
+      <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
+      <div class="thumbnail">
+        <img src="img/profiles/profile4.png" alt="New York" width="400" height="300">
+        <h4>New York</h4>
+        <p>We built New York</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+</div>
+
+<footer-component></footer-component>
