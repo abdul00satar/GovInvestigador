@@ -51,43 +51,20 @@
 <div class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2><br>
   <h4>What we have created</h4>
-  <div class="row text-center">
+  <div class="row text-center" >
    
+   <div *ngFor="#profile of profiles" (click)="profileActions(profile)">
     <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
       <div class="thumbnail">
-        <img src="img/profiles/profile1.png" alt="Paris" width="400" height="300">
-        <h4>Paris</h4>
-        <p>Yes, we built Paris</p>
+        <img src="img/profiles/{{profile.imgUrl}}.png" alt="profile.firstName" width="400" height="300">
+        <h4>{{ profile.firstName }} {{ profile.lastName}}</h4>
+        <p>{{profile.profile.jobTitle}}</p>
       </div>
     </div>
-    
-    <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
-      <div class="thumbnail">
-        <img src="img/profiles/profile2.png" alt="New York" width="400" height="300">
-        <h4>New York</h4>
-        <p>We built New York</p>
-      </div>
     </div>
     
-    <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
-      <div class="thumbnail">
-        <img src="img/profiles/profile3.png" alt="San Francisco" width="400" height="300">
-        <h4>San Francisco</h4>
-        <p>Yes, San Fran is ours</p>
-      </div> 
-    </div>
-    
-      <div class="col-sm-3 mouse-pointer" [routerLink]="['Profile']">
-      <div class="thumbnail">
-        <img src="img/profiles/profile4.png" alt="New York" width="400" height="300">
-        <h4>New York</h4>
-        <p>We built New York</p>
-      </div>
-    </div>
   </div>
-  
 </div>
-
 </div>
 </div>
 

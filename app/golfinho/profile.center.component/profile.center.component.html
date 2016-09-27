@@ -8,22 +8,21 @@
             <h3 class="color-subtitle"><b><span class="glyphicon glyphicon-user"></span> About me</b></h3>
             <br/>
             <div class="col-sm-6">
-              <h4>CEO && eginier <small><i>at</i></small> GOOGLE</h4>
-              <h4>Skills: <span class="label label-primary">WebDesigner</span>
-              <span class="label label-primary margin-5">Designer</span>
-              <span class="label label-primary margin-5">Graphic Designer</span>
+              <h4>{{profile.jobTitle}} <small><i>at</i></small> {{profile.componyName}}</h4>
+              <h4  *ngFor="#skill of profile.skills">Skills: <span class="label label-primary">{{skill}}</span>
                <h4>OverView: <small>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....<a href="#">see more</a></small></h4>
               
               </h4>
             </div>
             <div class="col-sm-6">
-
+                {{profile.firstName}}
             <br/>
-            <h4>State: <small>Single</small></h4>
-            <h4>Age: <small>19</small></h4>
-            <h4>Cyte: <small>Maputo-Mozambique</small></h4>
-            <h4>Phone Number: <small>828711644</small></h4>
-            <h4>Email: <small>devgirl@gmail.com</small></h4>
+            <h4>State: <small>{{profile.profile.civilStatus}}</small></h4>
+            <h4>Age: <small>{{profile.profile.age}}</small></h4>
+            <h4>Gener: <small>{{profile.profile.gender}}</small></h4>
+            <h4>Cyte: <small>{{profile.location[0]}}-Mozambique</small></h4>
+            <h4>Phone Number: <small>{{profile.phoneNumber}}</small></h4>
+            <h4>Email: <small>{{profile.email}}</small></h4>
             </div>            
 
          </div>
@@ -46,11 +45,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Web developer</td>
-        <td>Plural S.</td>
-        <td>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....</td>
-        <td>2016</td>
+      <tr *ngFor="#certificate of profile.certification">
+        <td>{{certificate.certificationName}}</td>
+        <td>{{certificate.certificationOrg}}</td>
+        <td>{{certificate.description}}</td>
+        <td>{{certificate.year}}</td>
       </tr>
     </tbody>
     <tbody>
