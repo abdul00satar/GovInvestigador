@@ -8,20 +8,20 @@
             <h3 class="color-subtitle"><b><span class="glyphicon glyphicon-user"></span> About me</b></h3>
             <br/>
             <div class="col-sm-6">
-              <h4>{{profile.jobTitle}} <small><i>at</i></small> {{profile.componyName}}</h4>
-              <h4  *ngFor="#skill of profile.skills">Skills: <span class="label label-primary">{{skill}}</span>
+              <h4>{{profile.profile.jobTitle}} <small><i>at</i></small> {{profile.profile.componyName}}</h4>
+              <h4>Skills: <span class="label label-primary" *ngFor="#skill of profile.profile.skills">{{skill}}</span><br/>
                <h4>OverView: <small>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....<a href="#">see more</a></small></h4>
               
               </h4>
             </div>
             <div class="col-sm-6">
-                {{profile.firstName}}
+                {{profile.email}}
             <br/>
             <h4>State: <small>{{profile.profile.civilStatus}}</small></h4>
             <h4>Age: <small>{{profile.profile.age}}</small></h4>
             <h4>Gener: <small>{{profile.profile.gender}}</small></h4>
-            <h4>Cyte: <small>{{profile.location[0]}}-Mozambique</small></h4>
-            <h4>Phone Number: <small>{{profile.phoneNumber}}</small></h4>
+            <h4>Cyte: <small>{{profile.location}}-Mozambique</small></h4>
+            <h4>Phone Number: <small>{{profile.profile.phoneNumber}}</small></h4>
             <h4>Email: <small>{{profile.email}}</small></h4>
             </div>            
 
@@ -45,37 +45,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="#certificate of profile.certification">
+      <tr *ngFor="#certificate of profile.profile.certification">
         <td>{{certificate.certificationName}}</td>
         <td>{{certificate.certificationOrg}}</td>
         <td>{{certificate.description}}</td>
         <td>{{certificate.year}}</td>
       </tr>
     </tbody>
-    <tbody>
-      <tr>
-        <td>Arch. Information</td>
-        <td>Plural S.</td>
-        <td>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....</td>
-        <td>2015</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Graphic Designer</td>
-        <td>Code</td>
-        <td>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....</td>
-        <td>2013</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>CCNA</td>
-        <td>TUTS</td>
-        <td>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember....</td>
-        <td>2013</td>
-      </tr>
-    </tbody>
+    
   </table>
           </div>
         </div>
@@ -87,21 +64,28 @@
           <div class="panel-body  box-card">
             <h3 class="color-subtitle"><b><span class="glyphicon glyphicon-education"></span> Education</b></h3>
             <br/>
-            <h4>Computer Cience <i>(2015-2016)</i> <small>at </small> Maputo-Mozambique</h4>
+            <div *ngFor="#educ of profile.profile.education">
+            <h4>{{educ.degree}} <i>({{educ.startYear}}-{{educ.endYear}})</i> <small>at </small> {{educ.country}}</h4>
             <hr>
-            <h4>Engenier  <i>(2013-2016)</i> <small>at </small>Pretoria-South-Africa</h4>
-            
+            </div>
             </div>
         </div>
     </div>
     
+       
     <!--Experience-->    
         <div class="col-sm-12">
         <div class="panel panel-default text-left">
           <div class="panel-body  box-card">
             <h3 class="color-subtitle"><b><span class="glyphicon glyphicon-cog"></span>Experience</b></h3>
             <br/>
-            <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+             <div class="" *ngFor="#expe of profile.profile.experience">
+             <h4>Job Title:<small> {{expe.jobTitle}}</small></h4>
+             <h4>Company Name:<small> {{expe.componyName}}</small></h4>
+             <h4>Year:<small> {{expe.startYear}}</small></h4>
+             <h4>OverView<small> {{expe.summary}}</small></h4>
+             <hr/>
+             </div>
          </div>
         </div>
     </div>

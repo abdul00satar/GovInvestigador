@@ -24,8 +24,7 @@ export class ListProfilesComponent implements OnInit{
     
     ngOnInit(): void{
         this.profiles = this._listProfilesService.getAllProfiles();
-        alert(this.profiles[0].firstName)
-        console.info(this.profiles)
+    
     }
     
     

@@ -27,7 +27,7 @@ export class ProfileCenterComponent{
                 "following": [12],
                 "followers": [13],
                 "civilStatus": "single",
-                "skills": ["frontend developer", "backend developer", "mongodb",  "docker"],
+                "skills": ["frontend developer", "backend developer"],
                 "groups": [], 
                 "community": [],
                 "recomendation": [],

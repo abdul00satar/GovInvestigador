@@ -33,8 +33,6 @@ System.register(['angular2/core', '../../golfinho/footer.component/footer.compon
                 }
                 ListProfilesComponent.prototype.ngOnInit = function () {
                     this.profiles = this._listProfilesService.getAllProfiles();
-                    alert(this.profiles[0].firstName);
-                    console.info(this.profiles);
                 };
                 ListProfilesComponent.prototype.profileActions = function (item) {
                     alert(item);

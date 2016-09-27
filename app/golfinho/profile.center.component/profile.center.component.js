@@ -38,7 +38,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "following": [12],
                             "followers": [13],
                             "civilStatus": "single",
-                            "skills": ["frontend developer", "backend developer", "mongodb", "docker"],
+                            "skills": ["frontend developer", "backend developer"],
                             "groups": [],
                             "community": [],
                             "recomendation": [],
