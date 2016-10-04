@@ -1,0 +1,57 @@
+<section>
+   <div class="box-form">
+       <button class="btn btn-cancel" [routerLink]="['Home']">x</button>
+
+    <h2>Registro <small><i>(Parte 4)</i></small></h2>
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="99"
+  aria-valuemin="0" aria-valuemax="100" style="width:95%">
+    99% do cadastro (finalizar)
+  </div>
+</div>
+   <hr/>
+   <form action="">
+ 
+      <div class="row">
+          <div class="col-md-12">
+              <label for="">Instituicao</label>
+              <input type="text"/>
+           </div>
+         
+       </div>
+    
+         <div class="row">
+          <div class="col-md-4">
+              <label for="">Cargo</label>
+              <input type="text"/>
+           </div>
+           <div class="col-md-4">
+              <label for="">Pais</label>
+              <select>
+                <option value="">Mocambique</option>
+                <option value="">Tanzania</option>
+                <option value="">Angola</option>
+              </select>
+           </div>
+           <div class="col-md-4">
+              <label for="">Inicio(Ano)</label>
+              <input type="text"/>
+           </div>
+      
+       </div>
+    
+        
+    
+         <div class="row">
+          <div class="col-md-4">
+              <label for="" class="color-gray">Nenhuma actuacao profissional no momento</label>
+           </div> 
+       </div>
+    
+    
+    </form>
+           <button class="btn btn-simple" [routerLink]="['Home']">Proximo</button>
+           <button class="btn btn-simple" [routerLink]="['Cadastro_parte_3']">Voltar</button>
+    
+   </div> 
+</section>

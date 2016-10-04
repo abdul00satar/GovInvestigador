@@ -1,55 +1,66 @@
-@font-face {
-    font-family: robotobold;
-    src: url('fontes/roboto/Roboto-Bold.woff');
-    src: url('fontes/roboto/Roboto-Bold.woff2');
-}
 
+select {
+   width: 100%;
+   height: 34px;
+   overflow: hidden;
+   background: url('./img/down-arrow.svg') no-repeat right;
+   border: 1px solid gray;
+   padding-right:5px;
+   background: white
 
-@font-face {
-    font-family: robotoMedium;
-    src: url('fontes/roboto/Roboto-Medium.woff');
-    src: url('fontes/roboto/Roboto-Medium.woff2');
-}
-
-@font-face {
-    font-family: robotoRegular;
-    src: url('fontes/roboto/Roboto-Regular.woff');
-    src: url('fontes/roboto/Roboto-Regular.woff2');
-}
-
-@font-face {
-    font-family: robotoLight;
-    src: url('fontes/roboto/Roboto-Light.woff');
-    src: url('fontes/roboto/Roboto-Light.woff2');
-}
-/*color section*/
-.color-subtitle{
-    color:#2c6ed5;
-}
-
-/*buttons*/
-.btn-golf{
-    background: #2c6ed5;
-    border: 2px solid white;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 30px;
-    color: white;
-    letter-spacing: 1px;
-}
-
-.btn-golf:hover{
-    background: #2766c8;
-    color: white;
-    
-}
-
-li {
-    font-size: large;
-}
-
-div.panel-heading {
-   font-size: x-large; 
-}
-
-
+   }
+   
+   section{
+       min-height: 100vh;
+       background: gray;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       padding: 50px;
+   }
+   
+   .box-form{
+       background: white;
+       padding: 50px;
+       width: 1000px;
+       height: auto
+     
+   }
+   
+   form{
+       margin-top: 10px;
+   }
+   
+   label{
+       display: block
+   }
+   
+   input{
+       border: 1px solid gray;
+       padding: 5px;
+       background: white;
+       border-radius: 0px;
+       width: 100%
+   }
+   
+   label{
+       margin-top: 30px;
+   }
+   
+   .btn-simple{
+       border: 2px solid gray;
+       margin-right: 13px;
+       float: right;
+       margin-top:40px;
+       padding:5px 10px;
+       border-radius: 0px;
+       background: whitesmoke
+   }
+   
+   .btn-cancel{
+    float: right;
+    background: red;
+    border: 1px solid orangered;
+    margin-right: -60px;
+    margin-top: -60px;
+   }
