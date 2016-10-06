@@ -1,11 +1,14 @@
-/*Home Component css*/
+/*Ho` Component css*/
 
 .home-section{
-    margin-top:-20px;
-    background: #EEEEEE;
-    min-height: 100vh;
-    padding: 100px;
+    background: #E0E0E0;
+    height: 100vh;
 }
 
 
 
+.default-width-content{
+    max-width: 1050px;
+    margin: auto;
+    padding-top:8%;
+}
