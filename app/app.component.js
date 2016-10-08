@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router', './home.component/home.component', './home-1.component/home-1.component', './cadastro1.component/cadastro1.component', './cadastro2.component/cadastro2.component', './cadastro3.component/cadastro3.component', './cadastro4.component/cadastro4.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router', './home.component/home.component', './home-1.component/home-1.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, home_component_1, home_1_component_1, cadastro1_component_1, cadastro2_component_1, cadastro3_component_1, cadastro4_component_1;
+    var core_1, http_1, router_1, home_component_1, home_1_component_1;
     var AppComponent;
     return {
         setters:[
@@ -29,18 +29,6 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
             },
             function (home_1_component_1_1) {
                 home_1_component_1 = home_1_component_1_1;
-            },
-            function (cadastro1_component_1_1) {
-                cadastro1_component_1 = cadastro1_component_1_1;
-            },
-            function (cadastro2_component_1_1) {
-                cadastro2_component_1 = cadastro2_component_1_1;
-            },
-            function (cadastro3_component_1_1) {
-                cadastro3_component_1 = cadastro3_component_1_1;
-            },
-            function (cadastro4_component_1_1) {
-                cadastro4_component_1 = cadastro4_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -57,10 +45,6 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
                     }),
                     router_1.RouteConfig([
                         { path: '/home', name: 'Home', component: home_component_1.HomePage, useAsDefault: true },
-                        { path: '/parte_1', name: 'Cadastro_parte_1', component: cadastro1_component_1.Cadastro_1_Component },
-                        { path: '/parte_2', name: 'Cadastro_parte_2', component: cadastro2_component_1.Cadastro_2_Component },
-                        { path: '/parte_3', name: 'Cadastro_parte_3', component: cadastro3_component_1.Cadastro_3_Component },
-                        { path: '/parte_4', name: 'Cadastro_parte_4', component: cadastro4_component_1.Cadastro_4_Component },
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
